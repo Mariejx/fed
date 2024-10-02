@@ -1,21 +1,174 @@
 <!DOCTYPE html>
-<html lang="nl">
-	
+<html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
+	<meta name="author" content="Marie Janette">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<title>Howdy FED2425</title>
-	
+
+	<title>Rhye Beauty</title>
+
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 <body>
-	<h1>Howdy FED2425</h1>
+	<header>
+
+		<nav class="navbar">
+			<!-- Logo en Hamburger Menu Toggle -->
+			<section class="logo">
+				<img class="logo" src="images/rhyemerk.jpg" alt="RHYE logo">
+			</section>
+
+			<!-- Checkbox voor toggle -->
+			<input type="checkbox" id="checkbox_toggle">
+			<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+			<!-- Navigatielinks -->
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="getstarted.html">Get Started</a></li>
+				<li><a href="booktreatment.html">Book Treatment</a></li>
+				<li><a href="treatments.html">Treatments</a></li>
+				<li><a href="shop.html">Shop</a></li>
+				<li><a href="account.html">Account</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+	</header>
+
+
+
+
+	<section class="image-container">
+		<img src="images/vrouwmetlipgloss.jpg"
+			alt="Person applying brow lamination product while holding a small bottle labeled 'RHYE">
+		<section class="overlay">
+			<p>Just Launched</p>
+			<h2>Introducing: Giya Lip Oil</h2>
+			<p>Nourishing, silky soft, and non-sticky. That's Giya.</p>
+			<a href="https://rhyebeauty.com/products/giya-lip-oil" class="cta-button2">DISCOVER NOW</a>
+		</section>
+	</section>
+
+	<section class="cta-section">
+		<h1>Meet the first subscription-based brown lamination kit</h1>
+		<p>Our latest revolutionary brow lifting system for fuller-shaped brows. The innovative, gentle formula sets
+			your brows.</p>
+		<a href="https://rhyebeauty.com/products/brow-lamination-kit?selling_plan=689044455757&variant=47532940263757"
+			class="cta-button">DISCOVER NOW</a>
+	</section>
+
+	<section class="gallery-container">
+		<section class="Gallery-Klein">
+			<section class="main-image-container">
+				<img src="images/vrouwmetsage.jpg" id="main-image" class="main-image"
+					alt="Person holding a 'RHYE' brow lamination kit in front of their face, partially covering their features.">
+			</section>
+			<section class="thumbnails">
+				<img src="images/rhyesage.jpg" class="thumbnail"
+					alt="Hand holding a 'RHYE' brow lamination kit with liquid dripping down."
+					onclick="changeImage(this)">
+				<img src="images/Rhye1918-1.jpg" class="thumbnail"
+					alt="Close-up of the RHYE Sage Brow Lamination Kit packaging with a textured surface."
+					onclick="changeImage(this)">
+				<img src="images/vrouwopeenstoel.jpg" class="thumbnail"
+					alt="Person sitting on a chair, wearing a brown sweater, grooming their eyebrow with a brush."
+					onclick="changeImage(this)">
+				<img src="images/sagepakket.jpg" class="thumbnail"
+					alt="Contents of the RHYE Sage Brow Lamination Kit, including brushes, tools, product sachets, and packaging."
+					onclick="changeImage(this)">
+			</section>
+		</section>
+
+
+
+		<section class="subscription-container">
+			<h2 id="titelLaminationKit">Brown Lamination Kit</h2>
+			<p>€24,95<br><br>Tax included.</p>
+			<h2>Choose your subscription.</h2>
+			<section class="subscription-option">
+				<input type="radio" name="subscription" id="two-weeks" checked>
+				<label for="two-weeks">
+					<span class="price">€19,95</span>
+					Delivery every two weeks
+				</label>
+			</section>
+
+			<section class="subscription-option">
+				<input type="radio" name="subscription" id="month">
+				<label for="month">
+					<span class="price">€19,95</span>
+					Delivery every month
+				</label>
+			</section>
+
+			<section class="subscription-option">
+				<input type="radio" name="subscription" id="two-months">
+				<label for="two-months">
+					<span class="price">€19,95</span>
+					Delivery every two months
+				</label>
+			</section>
+
+			<section class="subscription-option">
+				<input type="radio" name="subscription" id="one-time">
+				<label for="one-time">
+					<span class="price">€24,95</span>
+					I just want one kit to try out
+				</label>
+			</section>
+			<button>ADD TO CART</button>
+		</section>
+	</section>
+
+	
+	<section>
+		<div class="container">
+			<div class="text-box">
+				<h3>Amsterdam</h3>
+				<h1>In-Store Treatments</h1>
+				<a href="https://rhyebeauty.com/pages/treatments">View More</a>
+			</div>
+			<div class="image-box">
+				<img src="images/Rhyezijwaarts.jpg"
+					alt="Person in profile with a ponytail, wearing a gray turtleneck sweater.">
+			</div>
+		</div>
+	</section>
+
+	<section class="video-container">
+		<video width="320" controls title="Video a woman is opening one of the product of the brow Lamination Kit">
+			<source src="video.mp4" type="video/mp4">
+		</video>
+	</section>
+
+	<footer>
+		<section class="footer-content">
+			<p>2024 RHYE</p>
+			<p>Follow us on social media.</p>
+			<button>Follow on Shop</button>
+
+			<nav>
+				<ul>
+					<li><a href="https://rhyebeauty.com/pages/store-policy">Store Policy</a></li>
+					<li><a href="https://rhyebeauty.com/pages/shipping-returns">Shipping & Returns</a></li>
+					<li><a href="https://rhyebeauty.com/pages/terms-conditions">Terms & Conditions</a></li>
+					<li><a href="https://rhyebeauty.com/pages/working-at">Working at RHYE</a></li>
+					<li><a href="https://rhyebeauty.com/pages/academy">Academy</a></li>
+					<li><a href="https://rhyebeauty.com/pages/faq">FAQ</a></li>
+				</ul>
+			</nav>
+
+			<p>Receive email updates about new products, events, launches, and more.</p>
+		</section>
+	</footer>
+
+
+
 
 	<script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>
